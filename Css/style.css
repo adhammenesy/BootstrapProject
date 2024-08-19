@@ -1,0 +1,253 @@
+:root {
+    --light-gray: #f0f0f0;
+    --dark-gray: #333333;
+    --medium-gray: #666666;
+    --dark-gray-background: #333333;
+    --light-gray-to-darker-gray-gradient: linear-gradient(135deg, var(--light-gray) 0%, #d9d9d9 100%);
+}
+
+body {
+    background-color: var(--light-gray) !important;
+    font-family: 'Arial', sans-serif;
+    color: var(--dark-gray);
+    margin: 0;
+    padding: 0;
+    transition: 5s;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: var(--light-gray-to-darker-gray-gradient);
+}
+
+button {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    z-index: 1;
+    background-color: var(--dark-gray-background);
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar */
+.navbar-nav .nav-item {
+    transition: 2s;
+}
+
+.navbar-nav .nav-item a:hover {
+    color: #e5ff00 !important;
+}
+
+/* landing */
+
+.landing .content p {
+    margin-left: 20%;
+    margin-top: 100%;
+    font-size: 1.4em;
+    line-height: 1.8;
+    color: var(--medium-gray);
+}
+
+.landing .content .img img {
+    transform: perspective(1000px) rotateX(-10deg) rotateY(10deg);
+    transition: all 0.5s ease-in-out;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.landing .content .img img:hover {
+    transform: perspective(1900px) rotateX(10deg) rotateY(5deg);
+    border-color: #1e692f;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Aboutus */
+
+#aboutus .aboutus p {
+    margin-left: 25%;
+}
+
+.aboutus .read {
+    margin-left: 45%;
+}
+
+
+/* Products */
+#products {
+    align-items: start;
+    justify-content: start;
+}
+
+.products h1 {
+    padding: 10%;
+}
+
+
+
+.products .cards img {
+    opacity: .6;
+    transition: 1s;
+}
+
+.products .card:hover {
+    transform: scale(1.05);
+}
+
+.products .card:hover img {
+    opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .landing .content .p p {
+        margin-left: 0;
+        font-size: 1.2em;
+    }
+
+    .landing .content .img img {
+        width: 100%;
+        transform: none;
+    }
+
+    #aboutus .aboutus p {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .aboutus .read {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .products h1 {
+        padding: 5%;
+    }
+
+    .products .cards {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .landing .content .p p {
+        font-size: 1em;
+    }
+
+    .products h1 {
+        padding: 2%;
+    }
+}
+
+/* Buyers */
+@keyframes buyersAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.9);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: translateY(10px) scale(1.05);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.list-group-item {
+    animation: buyersAnimation 1.5s ease-in-out;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#top h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.list-group-item {
+    transition: transform 0.3s;
+    border: 2px solid #66ff00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.list-group-item img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #66ff00;
+}
+
+.list-group-item span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* features */
+
+.features .content {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.features .content img {
+    transform: perspective(1000px) rotateX(-10deg) rotateY(10deg);
+    transition: all 0.5s ease-in-out;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    height: 300px;
+    width: auto;
+}
+
+.features .content img:hover {
+    transform: perspective(1900px) rotateX(10deg) rotateY(5deg);
+    border-color: #1e692f;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.features .content p {
+    margin-top: 10px;
+    margin-left: 0;
+    text-align: center;
+}
+
+/* Footer */
+
+footer a i:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+    color: #66ff00;
+}

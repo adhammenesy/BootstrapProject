@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task</title>
+  <link rel="stylesheet" href="./Css/style.css">
+  <link rel="stylesheet" href="./Css/bootstrap.min.css">
+  <link rel="stylesheet" href="./Css/all.min.css">
+</head>
+
+<body>
+  <main>
+    <header>
+      <!-- Navbar -->
+      <nav class="container navbar navbar-expand-lg bg-white bg-dark rounded-3 position-fixed top-0 start-0 end-0">
+        <div class="container-fluid">
+          <button class="navbar-toggler text-dark bg-dark" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white"><i class="fas fa-bars"></i></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <i class="fas fa-gem"></i>
+          </a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-dark" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#aboutus">Aboutus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#products">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#top">Top</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#footer">Footer</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-dark" target="_blank" href="./Pages/account.html">Account</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="./Dark/index.html">Dark Mode</a>
+              </li>
+            </ul>
+            
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Home -->
+      <section id="home" class="container mt-5 pt-5">
+        <div class="landing">
+
+          <h1 class="text-center mt-5 text-dark">Welcome To Our Website</h1>
+          <p class="lead text-center text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            aperiam dignissimos numquam nisi laborum exercitationem impedit dolores laboriosam nostrum eaque.</p>
+
+          <div class="content d-flex flex-column flex-md-row">
+            <div class="img align-items-start">
+              <img src="./Imgs/camera.png" alt="img" class="img-fluid rounded-3">
+            </div>
+            <div class="p lead text-center ">
+              <p class="text-dark" style="display: block; margin-top: 40%;">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Molestiae,
+                necessitatibus!</p>
+              <a href="./Pages/account.html" class="btn btn-outline-dark mt-3">Go to Account</a>
+              <a href="./Dark/index.html" class="btn btn-outline-dark mt-3">Go to Dark Mode</a>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- Aboutus -->
+      <section id="aboutus" class="mt-5 container">
+        <div class="aboutus">
+          <h1 class="text-center mt-5 text-dark">About Us</h1>
+          <p class="lead text-center text-dark w-50 mx-auto">Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Corporis aperiam dignissimos numquam nisi laborum exercitationem impedit dolores
+            laboriosam nostrum eaque.</p>
+          <a href="#products" class="btn btn-outline-dark mt-5 d-block mx-auto w-25">Read More</a>
+        </div>
+      </section>
+      <!-- Products -->
+      <section id="products" class="mt-5 container">
+        <div class="products">
+          <h1 class="text-dark">Products</h1>
+          <div class="cards row">
+            <div class="card bg-white col-md-4 mb-4" style="transition: transform 0.3s;">
+              <img src="./Imgs/product1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-dark">Card title</h5>
+                <p class="card-text text-dark">
+                  Compatible Camera Mount Canon EF
+                  Aspect Ratio 16:9
+                  Photo Sensor Technology CMOS
+                  File Format RAW, JPEG
+                  Maximum Focal Length 18 Millimeters
+                </p>
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+            <div class="card bg-white col-md-4 mb-4" style="transition: transform 0.3s;">
+              <img src="./Imgs/product2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-dark">Card title</h5>
+                <p class="card-text text-dark">Compatible Camera Mount Canon EF
+                  Aspect Ratio 16:9
+                  Photo Sensor Technology CMOS
+                  File Format RAW, JPEG
+                  Maximum Focal Length 18 Millimeters</p>
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+            <div class="card bg-white col-md-4 mb-4" style="transition: transform 0.3s;">
+              <img src="./Imgs/product3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-dark">Card title</h5>
+                <p class="card-text text-dark">Compatible Camera Mount Canon EF
+                  Aspect Ratio 16:9
+                  Photo Sensor Technology CMOS
+                  File Format RAW, JPEG
+                  Maximum Focal Length 18 Millimeters</p>
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+            <div class="card bg-white col-md-4 mb-4" style="transition: transform 0.3s;">
+              <img src="./Imgs/product4.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-dark">Card title</h5>
+                <p class="card-text text-dark">Compatible Camera Mount Canon EF
+                  Aspect Ratio 16:9
+                  Photo Sensor Technology CMOS
+                  File Format RAW, JPEG
+                  Maximum Focal Length 18 Millimeters</p>
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+            <div class="card bg-white col-md-4 mb-4" style="transition: transform 0.3s;">
+              <img src="./Imgs/product5.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-dark">Card title</h5>
+                <p class="card-text text-dark">Compatible Camera Mount Canon EF
+                  Aspect Ratio 16:9
+                  Photo Sensor Technology CMOS
+                  File Format RAW, JPEG
+                  Maximum Focal Length 18 Millimeters</p>
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+            <div class="card bg-white col-md-4 mb-4" style="transition: transform 0.3s;">
+              <img src="./Imgs/product6.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-dark">Card title</h5>
+                <p class="card-text text-dark">Compatible Camera Mount Canon EF
+                  Aspect Ratio 16:9
+                  Photo Sensor Technology CMOS
+                  File Format RAW, JPEG
+                  Maximum Focal Length 18 Millimeters</p>
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade bg-opacity-50" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content bg-white">
+              <div class="modal-header">
+                <h5 class="modal-title text-dark" id="exampleModalLabel">Are You Sure To Buy This Product?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body lead text-dark">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-dark">Buy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- features -->
+      <section class="features container mt-5 pt-5">
+        <div class="container">
+          <center>
+            <h1>Features</h1>
+          </center>
+          <div class="content">
+            <div class="row first d-flex flex-wrap mb-5">
+              <div class="col-md-6">
+                <img src="./Imgs/fut1.png" alt="features" class="img img-fluid me-3">
+              </div>
+              <div class="col-md-6">
+                <h1 class="fw-bold">Compatible Camera Mount Canon EF</h1>
+                <p class="lead text-dark">
+                  Aspect Ratio 16:9 <br>
+                  Photo Sensor Technology CMOS <br>
+                  File Format RAW, JPEG <br>
+                  Maximum Focal Length 18 Millimeters
+                </p>
+              </div>
+            </div>
+            <div class="row second d-flex flex-wrap mt-5">
+              <div class="col-md-6 order-md-2">
+                <img src="./Imgs/fut2.png" alt="features" class="img img-fluid ms-5">
+              </div>
+              <div class="col-md-6 order-md-1">
+                <h1 class="fw-bold">Compatible Camera Mount Canon EF</h1>
+                <p class="lead text-dark">
+                  Aspect Ratio 16:9 <br>
+                  Photo Sensor Technology CMOS <br>
+                  File Format RAW, JPEG <br>
+                  Maximum Focal Length 18 Millimeters
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Top buyers -->
+      <section id="top" class="container mt-5 pt-5">
+        <div class="top">
+          <h2 class="text-dark text-center mb-4">Top 10 Buyers</h2>
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">John Doe</div>
+              15 purchases
+            </div>
+            <span class="badge bg-primary rounded-pill">1</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Jane Smith</div>
+              12 purchases
+            </div>
+            <span class="badge bg-primary rounded-pill">2</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Alice Johnson</div>
+              10 purchases
+            </div>
+            <span class="badge bg-primary rounded-pill">3</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Bob Brown</div>
+              9 purchases
+            </div>
+            <span class="badge bg-primary rounded-pill">4</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Charlie Davis</div>
+              8 purchases
+            </div>
+            <span class="badge bg-primary rounded-pill">5</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Diana Evans</div>
+              7 purchases
+            </div>
+            <span class="badge bg-primary rounded-pill">6</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Frank Green</div>
+              6 purchases
+            </div>
+            <span class="badge bg-primary rounded-pill">7</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Grace Harris</div>
+              5 purchases
+            </div>
+            <span class="badge bg-primary rounded-pill">8</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Henry Jackson</div>
+              4 purchases
+            </div>
+            <span class="badge bg-primary rounded-pill">9</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Ivy King</div>
+              3 purchases
+            </div>
+            <span class="badge bg-primary rounded-pill">10</span>
+          </li>
+        </ol>
+        </div>
+      </section>
+      <!-- Footer -->
+
+    </header>
+    <footer id="footer" class="bg-white text-dark text-center py-3">
+      <p> All rights reserved.</p>
+      <div>
+        <a href="https://www.facebook.com" class="text-dark me-3" style="transition: transform 0.3s;"><i
+            class="fab fa-facebook-f"></i></a>
+        <a href="https://www.twitter.com" class="text-dark me-3" style="transition: transform 0.3s;"><i
+            class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" class="text-dark me-3" style="transition: transform 0.3s;"><i
+            class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com" class="text-dark" style="transition: transform 0.3s;"><i
+            class="fab fa-linkedin-in"></i></a>
+      </div>
+    </footer>
+  </main>
+  <script src="./Js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="../Css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Css/style.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col text-center">
+                <a href="../index.html" class="btn btn-outline-dark">Back to Main Page</a>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5" style="height: 300px;">
+        <div class="row" style="height: 300px;">
+            <div class="col-md-4"mt-5 >
+                <div class="card rounded-3">
+                    <img src="../Imgs/avatar.png" class="card-img-top bg-white" style="width: 50%; margin-left: 20%; margin-top: 30px;" alt="User Avatar">
+                    <div class="card-body bg-white rounded-3 mt-5">
+                        <h5 class="card-title text-dark">User Name</h5>
+                        <p class="card-text text-dark">Email: user@example.com</p>
+                        <p class="card-text text-dark">Total Money: $1000</p>
+                        <div class="btns" >
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editProfileModal">Edit Profile</button>
+                            <button type="button" class="btn btn-secondary ms-2" data-bs-toggle="modal" data-bs-target="#transferMoneyModal">Transfer Money</button>
+                        </div>
+
+                        <!-- Edit Profile Modal -->
+                        <div class="modal fade" id="editProfileModal" tabindex="-1"
+                            aria-labelledby="editProfileModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content bg-white">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-dark" id="editProfileModalLabel">Edit Profile
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="userName" class="form-label text-dark">User Name</label>
+                                                <input type="text" class="form-control" id="userName" value="User Name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="userEmail" class="form-label text-dark">Email</label>
+                                                <input type="email" class="form-control" id="userEmail"
+                                                    value="user@example.com">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="totalMoney" class="form-label text-dark">Password</label>
+                                                <input type="text" class="form-control" id="totalMoney"
+                                                    value="123456789">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-dark"
+                                            data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-outline-dark"><a
+                                                href="/Pages/account.html" class=" text-dark"
+                                                style="text-decoration: none;">Save changes</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Transfer Money Modal -->
+                        <div class="modal fade" id="transferMoneyModal" tabindex="-1"
+                            aria-labelledby="transferMoneyModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content bg-white">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-dark" id="transferMoneyModalLabel">Transfer Money
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="Recipient's email" aria-label="Recipient's email" aria-describedby="basic-addon2">
+                                                <span class="input-group-text" id="basic-addon2">@example.com</span>
+                                              </div>
+                                              
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text">$</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Amount (to the nearest dollar)">
+                                                <span class="input-group-text">.00</span>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-dark"
+                                            data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-outline-dark"><a
+                                            href="/Pages/account.html" class=" text-dark"
+                                            style="text-decoration: none;">Transfer</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 mt-5">
+                <h2 class="text-dark">Purchase History</h2>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Product 1
+                        <span class="badge bg-white rounded-pill text-dark">$100</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Product 2
+                        <span class="badge bg-white rounded-pill text-dark">$200</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Product 3
+                        <span class="badge bg-white rounded-pill text-dark">$300</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
